@@ -25,6 +25,7 @@ Para melhor ilustrar o funcionamento do projeto, aqui estão algumas imagens pr�
 
 ![img](./public/preview1.png)
 ![img2](./public/preview2.png)
+![img3](./public/preview3.png)
 
 ## 🚀 Como Rodar o Projeto
 
@@ -60,38 +61,50 @@ Para melhor ilustrar o funcionamento do projeto, aqui estão algumas imagens pr�
 
 O projeto está disponível online através da **Vercel**. Você pode acessá-lo clicando no link abaixo:
 
-[Aluroni - Vercel](https://aluroni.vercel.app)
+[Aluroni - Vercel](https://aluroni-ten-phi.vercel.app/)
 
 ## 📂 Estrutura de Pastas
 
 ```bash
 aluroni/
 │
-├── node_modules/          # Dependências do Node.js
-├── public/                # Arquivos públicos
-│   ├── index.html         # Página inicial
-│   └── favicon.ico        # Ícone do projeto
+├── public/                # Arquivos públicos da aplicação
 │
-├── src/                   # Diretório principal de código-fonte
-│   ├── components/        # Componentes React do projeto
-│   │   ├── Header/        # Cabeçalho com navegação
-│   │   ├── Footer/        # Rodapé do site
-│   │   └── DishCard/      # Cartões individuais dos pratos
-│   ├── pages/             # Páginas acessíveis por rotas
-│   │   ├── Home/          # Página principal com pratos aleatórios
-│   │   ├── Cardapio/      # Página com todos os pratos
-│   │   ├── Sobre/         # Página "Sobre"
-│   │   └── Prato/         # Página de detalhes de um prato
-│   ├── routes/            # Configuração das rotas
-│   ├── styles/            # Arquivos de estilo (CSS/SASS)
-│   ├── App.tsx            # Componente principal da aplicação
-│   ├── index.tsx          # Ponto de entrada da aplicação
-│   └── react-app-env.d.ts # Configurações TypeScript
+├── src/                   # Diretório principal do código-fonte
+│   ├── assets/            # Imagens, ícones e outros recursos estáticos
+│   ├── components/        # Componentes reutilizáveis do React
+│   │   ├── Footer/        # Componente do rodapé
+│   │   ├── Menu/          # Componente do menu de navegação
+│   │   ├── PaginaPadrao/  # Layout padrão para páginas
+│   │   └── TagsPrato/     # Componente para exibir tags de pratos
+│   ├── data/              # Arquivos de dados estáticos ou mockados
+│   │   └── cardapio.json  # Dados mockados do cardápio
+│   ├── pages/             # Páginas acessadas via rotas
+│   │   ├── Admin/         # Página para administração
+│   │   ├── Cardapio/      # Página que lista o cardápio completo
+│   │   ├── Inicio/        # Página inicial da aplicação
+│   │   ├── NotFound/      # Página exibida para rotas não existentes
+│   │   ├── Prato/         # Página de detalhes de um prato específico
+│   │   └── Sobre/         # Página de informações sobre o projeto
+│   ├── styles/            # Arquivos de estilo (CSS ou SCSS)
+│   │   ├── _breakpoints.scss  # Definições de breakpoints responsivos
+│   │   ├── _variaveis.scss    # Variáveis globais de estilo
+│   │   └── Tema.module.scss   # Estilos específicos do tema
+│   ├── types/             # Definições de tipos e interfaces TypeScript
+│   │   └── Prato.ts       # Tipo/interface para pratos
+│   ├── index.css          # Estilos globais da aplicação
+│   ├── index.tsx          # Ponto de entrada principal da aplicação
+│   ├── react-app-env.d.ts # Configurações de ambiente para o TypeScript
+│   └── routes.tsx         # Configuração e definição das rotas da aplicação
 │
-├── .gitignore             # Arquivo Gitignore
-├── package.json           # Configurações do projeto e dependências
-├── tsconfig.json          # Configuração do TypeScript
-└── README.md              # Documentação do projeto
+├── .eslintrc.json         # Configuração do ESLint
+├── .gitignore             # Arquivo que define arquivos/pastas ignorados pelo Git
+├── eslintconfig.mjs       # Configurações extras do ESLint
+├── LICENSE                # Arquivo de licença do projeto
+├── package.json           # Configuração de dependências e scripts do Node.js
+├── package-lock.json      # Registro de versões exatas das dependências instaladas
+├── README.md              # Documentação inicial do projeto
+└── tsconfig.json          # Configuração do TypeScript
 ```
 
 ## 📜 Scripts Disponíveis
